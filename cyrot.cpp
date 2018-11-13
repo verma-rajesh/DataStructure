@@ -6,11 +6,11 @@ void cyclicrotation(int arr[],int n)
 {
 	int x=arr[n-1];
 
-	std::cout<<"function rotation:";
+	std::cout<<"\nfunction rotation:";
 
 	for (int i = n-1; i >0; --i)
-		std::wcout<< arr[i]=arr[i-1]<< "  ";
-		std::wcout<< arr[0]=x<< "  ";
+		 arr[i]=arr[i-1];
+		arr[0]=x;
 	
 
 }
@@ -20,9 +20,7 @@ int main()
 	int arr[5]={1,2,3,4,5},i;
 
 	int n=sizeof(arr)/sizeof(arr[0]);
-	
-	std::cout<<n;
-	
+    
 	std::cout<<"array are:\n";
 	
 	for (int i = 0; i < n; ++i)
@@ -32,9 +30,9 @@ int main()
 
 	cyclicrotation(arr,n);
 
-	//std::cout << "\nRotated array is\n"; 
-    //for (i = 0; i < n; i++) 
-        //std::cout << arr[i]<<"  "; 
+	std::cout << "\nRotated array is\n"; 
+    for (i = 0; i < n; i++) 
+     std::cout << arr[i]<<"  "; 
   	
 	return 0;
 }
